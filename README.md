@@ -56,7 +56,7 @@ segmentacion-videojuegos/
 │   ├── modelos/                    Modelo y scaler serializados
 │   └── resumen.json                Resultados consumidos por el dashboard
 └── docs/
-    └── documentacion_proyecto.pdf  Documento final del proyecto
+    └── documentacion_proyecto.docx Documento editable (Word) del proyecto
 ```
 
 ## Instalación y ejecución
@@ -64,7 +64,7 @@ segmentacion-videojuegos/
 ```bash
 pip install -r requirements.txt
 python src/pipeline.py
-python src/generar_documento.py
+python src/generar_documento.py   # regenera el DOCX
 streamlit run dashboard/app.py
 ```
 
@@ -82,4 +82,4 @@ Python · Pandas · NumPy · Scikit-learn · Matplotlib · Seaborn · Streamlit 
 
 ## Integrantes
 
-Proyecto individual. Completar nombre del autor, grupo y fecha en la portada del PDF.
+Proyecto individual. Editar la portada del DOCX con tu nombre, grupo y fecha antes de entregar.
