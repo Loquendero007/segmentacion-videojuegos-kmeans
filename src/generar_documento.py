@@ -167,6 +167,12 @@ derivadas = pd.DataFrame([
     ["Anio", "Año de lanzamiento imputado y convertido a entero"],
 ], columns=["Variable", "Definición"])
 elementos.append(tabla(derivadas, anchos=[1.85 * inch, 4.55 * inch]))
+elementos.append(P(
+    "Estas cinco variables se seleccionaron porque, en conjunto, describen las dos dimensiones que se quieren separar: "
+    "el tamaño comercial del título y su orientación geográfica. El logaritmo de ventas evita que unos pocos éxitos "
+    "masivos dominen la distancia; las tres cuotas regionales capturan el perfil de mercado sin depender del volumen "
+    "absoluto; y el año incorpora la evolución temporal del catálogo. Género, plataforma y editorial se dejaron fuera "
+    "del entrenamiento por ser categóricas de alta cardinalidad, y se usaron únicamente para interpretar los grupos.", nota))
 
 elementos.append(P("5. Desarrollo del proyecto", h1))
 elementos.append(P("5.1 Limpieza y preparación", h2))
