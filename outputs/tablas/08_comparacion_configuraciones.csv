@@ -1,0 +1,3 @@
+﻿configuracion,variables,silueta,calinski_harabasz,davies_bouldin,inercia
+A: 5 variables (seleccionada),"Log_Ventas_Globales, Cuota_NA, Cuota_EU, Cuota_JP, Anio",0.4326,9107.32,0.9794,31352.32
+B: 3 variables (comparación),"Log_Ventas_Globales, Cuota_JP, Anio",0.4801,10031.77,0.9093,17693.96

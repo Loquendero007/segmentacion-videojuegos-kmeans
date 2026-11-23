@@ -1,0 +1,202 @@
+{
+  "registros_originales": 16598,
+  "registros_procesados": 16596,
+  "variables_originales": 11,
+  "variables_agrupamiento": [
+    "Log_Ventas_Globales",
+    "Cuota_NA",
+    "Cuota_EU",
+    "Cuota_JP",
+    "Anio"
+  ],
+  "variables_comparacion": [
+    "Log_Ventas_Globales",
+    "Cuota_JP",
+    "Anio"
+  ],
+  "k_seleccionado": 4,
+  "semilla": 42,
+  "pca_varianza": [
+    0.3643,
+    0.2618
+  ],
+  "metricas": [
+    {
+      "k": 2,
+      "inercia": 54865.99,
+      "silueta": 0.4222,
+      "calinski_harabasz": 8502.97,
+      "davies_bouldin": 0.9229,
+      "configuracion": "5 variables estandarizadas"
+    },
+    {
+      "k": 3,
+      "inercia": 40892.66,
+      "silueta": 0.3926,
+      "calinski_harabasz": 8538.89,
+      "davies_bouldin": 1.1884,
+      "configuracion": "5 variables estandarizadas"
+    },
+    {
+      "k": 4,
+      "inercia": 31352.32,
+      "silueta": 0.4326,
+      "calinski_harabasz": 9107.32,
+      "davies_bouldin": 0.9794,
+      "configuracion": "5 variables estandarizadas"
+    },
+    {
+      "k": 5,
+      "inercia": 26121.01,
+      "silueta": 0.3763,
+      "calinski_harabasz": 9028.66,
+      "davies_bouldin": 0.9946,
+      "configuracion": "5 variables estandarizadas"
+    },
+    {
+      "k": 6,
+      "inercia": 21956.61,
+      "silueta": 0.3837,
+      "calinski_harabasz": 9221.64,
+      "davies_bouldin": 0.926,
+      "configuracion": "5 variables estandarizadas"
+    }
+  ],
+  "comparacion": [
+    {
+      "configuracion": "A: 5 variables (seleccionada)",
+      "variables": "Log_Ventas_Globales, Cuota_NA, Cuota_EU, Cuota_JP, Anio",
+      "silueta": 0.4326,
+      "calinski_harabasz": 9107.32,
+      "davies_bouldin": 0.9794,
+      "inercia": 31352.32
+    },
+    {
+      "configuracion": "B: 3 variables (comparación)",
+      "variables": "Log_Ventas_Globales, Cuota_JP, Anio",
+      "silueta": 0.4801,
+      "calinski_harabasz": 10031.77,
+      "davies_bouldin": 0.9093,
+      "inercia": 17693.96
+    }
+  ],
+  "perfil": [
+    {
+      "Cluster": 0,
+      "Registros": 1946,
+      "Ventas_Globales_Millones": 2.832,
+      "Cuota_NA": 0.513,
+      "Cuota_EU": 0.291,
+      "Cuota_JP": 0.102,
+      "Anio": 2004.482,
+      "Genero_mas_frecuente": "Action",
+      "Plataforma_mas_frecuente": "PS2",
+      "Nombre_Grupo": "Blockbusters globales"
+    },
+    {
+      "Cluster": 1,
+      "Registros": 3755,
+      "Ventas_Globales_Millones": 0.169,
+      "Cuota_NA": 0.02,
+      "Cuota_EU": 0.011,
+      "Cuota_JP": 0.96,
+      "Anio": 2006.484,
+      "Genero_mas_frecuente": "Role-Playing",
+      "Plataforma_mas_frecuente": "PSP",
+      "Nombre_Grupo": "Fenómeno japonés"
+    },
+    {
+      "Cluster": 2,
+      "Registros": 8558,
+      "Ventas_Globales_Millones": 0.249,
+      "Cuota_NA": 0.724,
+      "Cuota_EU": 0.188,
+      "Cuota_JP": 0.021,
+      "Anio": 2005.682,
+      "Genero_mas_frecuente": "Action",
+      "Plataforma_mas_frecuente": "DS",
+      "Nombre_Grupo": "Favoritos de Norteamérica"
+    },
+    {
+      "Cluster": 3,
+      "Registros": 2337,
+      "Ventas_Globales_Millones": 0.274,
+      "Cuota_NA": 0.167,
+      "Cuota_EU": 0.699,
+      "Cuota_JP": 0.019,
+      "Anio": 2010.603,
+      "Genero_mas_frecuente": "Action",
+      "Plataforma_mas_frecuente": "PC",
+      "Nombre_Grupo": "Favoritos de Europa"
+    }
+  ],
+  "centroides": [
+    {
+      "Cluster": 0,
+      "Log_Ventas_Globales": 1.1728,
+      "Cuota_NA": 0.5133,
+      "Cuota_EU": 0.2909,
+      "Cuota_JP": 0.1015,
+      "Anio": 2004.4848,
+      "Nombre_Grupo": "Blockbusters globales"
+    },
+    {
+      "Cluster": 1,
+      "Log_Ventas_Globales": 0.1394,
+      "Cuota_NA": 0.0197,
+      "Cuota_EU": 0.011,
+      "Cuota_JP": 0.9596,
+      "Anio": 2006.4836,
+      "Nombre_Grupo": "Fenómeno japonés"
+    },
+    {
+      "Cluster": 2,
+      "Log_Ventas_Globales": 0.2077,
+      "Cuota_NA": 0.7243,
+      "Cuota_EU": 0.188,
+      "Cuota_JP": 0.0208,
+      "Anio": 2005.6817,
+      "Nombre_Grupo": "Favoritos de Norteamérica"
+    },
+    {
+      "Cluster": 3,
+      "Log_Ventas_Globales": 0.2154,
+      "Cuota_NA": 0.1667,
+      "Cuota_EU": 0.6988,
+      "Cuota_JP": 0.0186,
+      "Anio": 2010.6033,
+      "Nombre_Grupo": "Favoritos de Europa"
+    }
+  ],
+  "figuras": {
+    "generos": "outputs/figures/01_generos_frecuentes.png",
+    "anios": "outputs/figures/02_lanzamientos_por_anio.png",
+    "ventas": "outputs/figures/03_ventas_globales_log.png",
+    "plataformas": "outputs/figures/04_ventas_por_plataforma.png",
+    "regiones": "outputs/figures/05_ventas_por_region.png",
+    "seleccion_k": "outputs/figures/06_seleccion_k.png",
+    "pca": "outputs/figures/07_clusters_pca.png",
+    "dispersion": "outputs/figures/08_clusters_anio_ventas.png",
+    "distribucion": "outputs/figures/09_distribucion_clusters.png",
+    "perfil": "outputs/figures/10_perfil_relativo.png",
+    "boxplots": "outputs/figures/11_comparacion_variables.png"
+  },
+  "medias_generales": {
+    "Ventas_Globales_Millones": 0.5375,
+    "Cuota_NA": 0.4616,
+    "Cuota_EU": 0.2319,
+    "Cuota_JP": 0.2424,
+    "Anio": 2006.4158
+  },
+  "nombres_grupos": {
+    "0": "Blockbusters globales",
+    "1": "Fenómeno japonés",
+    "2": "Favoritos de Norteamérica",
+    "3": "Favoritos de Europa"
+  },
+  "nulos_originales": {
+    "Year": 271,
+    "Publisher": 58
+  },
+  "duplicados_eliminados": 2
+}

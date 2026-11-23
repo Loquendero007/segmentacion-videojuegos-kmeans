@@ -1,0 +1,8 @@
+﻿paso,registros_afectados
+Registros iniciales,16598
+Eliminación de filas idénticas,0
+Eliminación de juegos repetidos (Nombre-Plataforma-Año),2
+Imputación de año faltante con la mediana (2007),270
+Imputación de editorial faltante como 'Desconocido',58
+Ingeniería de variables (cuotas regionales y log de ventas),16596
+Valores atípicos en ventas detectados (límites 1%-99%: 0.01-5.43M); se conservan y se atenúan con log,166

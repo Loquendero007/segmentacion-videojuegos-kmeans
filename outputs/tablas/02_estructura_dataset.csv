@@ -1,0 +1,12 @@
+﻿columna,tipo,no_nulos,nulos,unicos
+Rank,int64,16598,0,16598
+Name,str,16598,0,11493
+Platform,str,16598,0,31
+Year,float64,16327,271,39
+Genre,str,16598,0,12
+Publisher,str,16540,58,578
+NA_Sales,float64,16598,0,409
+EU_Sales,float64,16598,0,305
+JP_Sales,float64,16598,0,244
+Other_Sales,float64,16598,0,157
+Global_Sales,float64,16598,0,623
