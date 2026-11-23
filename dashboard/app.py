@@ -36,9 +36,9 @@ with col2:
 
 seccion("Resumen del modelo")
 kpis([
-    {"label": "Clústeres", "value": resumen["k_seleccionado"], "hint": "seleccionados por silueta", "color": "#2563eb"},
-    {"label": "Juegos procesados", "value": f"{resumen['registros_procesados']:,}", "hint": "tras limpieza", "color": "#10b981"},
-    {"label": "Variables", "value": len(resumen["variables_agrupamiento"]), "hint": "estandarizadas", "color": "#f59e0b"},
+    {"label": "Clústeres", "value": resumen["k_seleccionado"], "hint": "seleccionados por silueta", "color": "#60a5fa"},
+    {"label": "Juegos procesados", "value": f"{resumen['registros_procesados']:,}", "hint": "tras limpieza", "color": "#34d399"},
+    {"label": "Variables", "value": len(resumen["variables_agrupamiento"]), "hint": "estandarizadas", "color": "#fbbf24"},
 ])
 
 pie("Fuente: Video Game Sales · VGChartz / Kaggle · Procesado con Python, Pandas y Scikit-learn")

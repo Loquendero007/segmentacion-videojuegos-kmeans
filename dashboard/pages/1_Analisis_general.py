@@ -41,16 +41,16 @@ genero_top = filtro["Genero"].mode().iat[0]
 anio_promedio = filtro["Anio"].mean()
 
 kpis([
-    {"label": "Juegos analizados", "value": f"{len(filtro):,}", "hint": "registros visibles", "color": "#2563eb"},
-    {"label": "Ventas globales", "value": f"{ventas_totales:,.0f} M", "hint": "millones de copias", "color": "#10b981"},
-    {"label": "Ventas promedio", "value": f"{ventas_promedio:.2f} M", "hint": "por título", "color": "#f59e0b"},
-    {"label": "Año promedio", "value": f"{anio_promedio:.1f}", "hint": f"género líder: {genero_top}", "color": "#8b5cf6"},
+    {"label": "Juegos analizados", "value": f"{len(filtro):,}", "hint": "registros visibles", "color": "#60a5fa"},
+    {"label": "Ventas globales", "value": f"{ventas_totales:,.0f} M", "hint": "millones de copias", "color": "#34d399"},
+    {"label": "Ventas promedio", "value": f"{ventas_promedio:.2f} M", "hint": "por título", "color": "#fbbf24"},
+    {"label": "Año promedio", "value": f"{anio_promedio:.1f}", "hint": f"género líder: {genero_top}", "color": "#a78bfa"},
 ])
 
 seccion("Evolución temporal")
 lanzamientos = filtro.groupby("Anio").size().rename("Juegos").reset_index()
 linea = alt.Chart(lanzamientos).mark_area(
-    line={"color": "#2563eb"}, color=alt.Gradient(gradient="linear", stops=[
+    line={"color": "#60a5fa"}, color=alt.Gradient(gradient="linear", stops=[
         alt.GradientStop(color="rgba(37,99,235,0.45)", offset=0),
         alt.GradientStop(color="rgba(37,99,235,0.02)", offset=1),
     ], x1=0, x2=0, y1=0, y2=1)

@@ -38,10 +38,10 @@ encabezado(
 )
 
 kpis([
-    {"label": "Clústeres", "value": resumen["k_seleccionado"], "hint": "grupos detectados", "color": "#2563eb"},
-    {"label": "Silueta promedio", "value": f"{silueta_k:.3f}", "hint": "calidad del agrupamiento", "color": "#10b981"},
-    {"label": "Juegos segmentados", "value": f"{len(df):,}", "hint": "dataset procesado", "color": "#f59e0b"},
-    {"label": "Varianza PCA 2D", "value": f"{sum(resumen['pca_varianza']):.1%}", "hint": "información visualizada", "color": "#8b5cf6"},
+    {"label": "Clústeres", "value": resumen["k_seleccionado"], "hint": "grupos detectados", "color": "#60a5fa"},
+    {"label": "Silueta promedio", "value": f"{silueta_k:.3f}", "hint": "calidad del agrupamiento", "color": "#34d399"},
+    {"label": "Juegos segmentados", "value": f"{len(df):,}", "hint": "dataset procesado", "color": "#fbbf24"},
+    {"label": "Varianza PCA 2D", "value": f"{sum(resumen['pca_varianza']):.1%}", "hint": "información visualizada", "color": "#a78bfa"},
 ])
 
 st.sidebar.markdown("## 🧩 Filtro de segmento")
@@ -94,7 +94,7 @@ with colB:
             x=alt.X("Nombre_Grupo:N", sort=dominio, title="Grupo", axis=alt.Axis(labelAngle=-30)),
             xOffset="Region:N",
             y=alt.Y("Cuota:Q", title="Cuota promedio", axis=alt.Axis(format="%")),
-            color=alt.Color("Region:N", title="Región", scale=alt.Scale(range=["#2563eb", "#10b981", "#f59e0b"])),
+            color=alt.Color("Region:N", title="Región", scale=alt.Scale(range=["#60a5fa", "#34d399", "#fbbf24"])),
             tooltip=[alt.Tooltip("Nombre_Grupo:N", title="Grupo"), alt.Tooltip("Region:N", title="Región"), alt.Tooltip("Cuota:Q", title="Cuota", format=".1%")],
         ).properties(title="Preferencia regional por grupo", height=330)
         st.altair_chart(configurar_grafico(barras), width="stretch")
